@@ -6,7 +6,7 @@
 
     {% if latest_articles_list %}
         {% for a in latest_articles_list %}
-            <a href="{% url 'article:detail' a.id %}">{{a.article_title}}</a>
+            <a href="{% url 'articles:detail' a.id %}">{{a.article_title}}</a>
         {% endfor %}
     {% else %}
         Not articles
